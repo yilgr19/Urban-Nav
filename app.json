@@ -40,7 +40,8 @@
       }
     },
     "extra": {
-      "googleMapsGeocodingKey": "YOUR_GEOCODING_API_KEY"
+      "googleMapsGeocodingKey": "YOUR_GEOCODING_API_KEY",
+      "locationIqAccessToken": "pk.460ab654183ebc73aa9a620b7df29f4c"
     },
     "plugins": [
       [
