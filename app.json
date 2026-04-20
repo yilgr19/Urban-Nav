@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Urban Nav",
+    "slug": "urban-nav",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d47a1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.urbannav.cucuta",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Urban Nav usa tu ubicación para mostrarte en el mapa y planificar trayectos en Cúcuta.",
+        "NSLocationAlwaysUsageDescription": "Urban Nav usa tu ubicación para orientarte en rutas de busetas."
+      },
+      "config": {
+        "googleMapsApiKey": "YOUR_IOS_GOOGLE_MAPS_KEY"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d47a1"
+      },
+      "package": "com.urbannav.cucuta",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_ANDROID_GOOGLE_MAPS_KEY"
+        }
+      }
+    },
+    "extra": {
+      "googleMapsGeocodingKey": "YOUR_GEOCODING_API_KEY"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Urban Nav usa tu ubicación para el mapa y la planificación de rutas en Cúcuta."
+        }
+      ]
+    ]
+  }
+}
